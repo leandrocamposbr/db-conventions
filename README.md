@@ -36,7 +36,7 @@ A primary key de toda tabela deve ser uma coluna de inteiros com incremento auto
 
 ## Stored Procedures
 
-Nomes das Stored Procedures com prefixo 'sp_' + nome tabela + ação.
+Nomes das Stored Procedures com prefixo `sp_` + `nome tabela` + `ação`.
 
 Ex. 'sp_users_save', 'sp_orders_save'.
 
