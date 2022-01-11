@@ -6,13 +6,13 @@ Estão são minhas anotações para convenções de nomenclatura. Serão notas i
 
 ## Geral
 
-Nomes das tabelas e colunas devem estar **minúsculas** e as palavras devem ser separadas por **underscore**, seguindo o padrão [snake case](https://en.wikipedia.org/wiki/Snake_case). Todos os termos em inglês. Preferir nomes descritivos, evitando contrações.
+Nomes das tabelas e colunas devem estar em **minúsculas** e as palavras devem ser separadas por **underscore**, seguindo o padrão [snake case](https://en.wikipedia.org/wiki/Snake_case). Todos os termos em inglês. Preferir nomes descritivos, evitando contrações.
 
 ## Tabelas
 
-Nomes das tabelas sempre no **plural**, no padrão prefixo `sp_` + `nome tabela`.
+Nomes das tabelas sempre no **plural**, usando prefixo `tb_` + `nome tabela`.
 
-Ex. 'tb_users', 'tb_orders'.
+Ex. 'tb_users', 'tb_orders'
 
 Ex:
 - **Bom**: `tb_users`, `tb_posts`, `tb_roles`, `tb_room_categories`
@@ -28,19 +28,21 @@ Ex:
 
 ## Foreign keys
 
-Todas as foreign keys devem seguir o padrão `nome_da_tabela_no_singular_id`.
+Todas as foreign keys devem seguir o padrão `nome da tabela no singular` + `_id`.
 
 Por exemplo, caso a tabela `users` tenha um relacionameto com a tabela `roles`, o nome da coluna foreign key da tabela `users` deve ser `role_id`.
 
 ## Primary keys
 
-A primary key de toda tabela deve ser uma coluna de inteiros com incremento automático, chamada `id`.
+A primary key de toda tabela deve um inteiro com incremento automático, chamada `id` + `nome da tabela no singular`.
+
+Ex: `iduser`, `idorder` 
 
 ## Stored Procedures
 
 Nomes das Stored Procedures com prefixo `sp_` + `nome tabela` + `ação`.
 
-Ex. 'sp_users_save', 'sp_orders_save'.
+Ex. 'sp_users_save', 'sp_orders_delete'
 
 ## Timestamps
 
