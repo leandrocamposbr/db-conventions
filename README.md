@@ -10,11 +10,13 @@ Nomes das tabelas e colunas devem estar **minúsculas** e as palavras devem ser 
 
 ## Tabelas
 
-Nomes das tabelas no **plural**.
+Nomes das tabelas sempre no **plural**, no padrão prefixo `sp_` + `nome tabela`.
+
+Ex. 'tb_users', 'tb_orders'.
 
 Ex:
-- **Bom**: `users`, `posts`, `roles`, `room_categories`
-- **Ruim**: `user`, `post`, `grupos`, `quarto_categoria`
+- **Bom**: `tb_users`, `tb_posts`, `tb_roles`, `tb_room_categories`
+- **Ruim**: `user`, `tb_post`, `grupos`, `quarto_categoria`
 
 ## Colunas
 
